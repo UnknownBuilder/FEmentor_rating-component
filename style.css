@@ -1,0 +1,96 @@
+:root {
+
+    --clr-orange: hsl(25, 97%, 53%);
+    --clr-light-grey:hsl(217, 12%, 63%);
+    --clr-medium-grey:hsl(216, 12%, 54%);
+    --clr-dark-blue:hsl(213, 19%, 18%);
+    --clr-very-dark-blue:hsl(216, 12%, 8%);
+    --clr-white:hsl(0, 0%, 100%);
+    --width-box: 23.50rem;
+
+}
+
+*{
+
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+/* ------------------- HTML Elements ------------------- */
+
+
+
+
+body {
+
+    background-color: var(--clr-very-dark-blue);
+    color:var(--clr-white);
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+p {
+
+    margin-top: 1rem;
+}
+
+footer {
+    height:5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p {
+
+    margin:0;
+}
+
+
+
+/* ------------------- HTML Classes ------------------- */
+
+.btn-choice {
+
+    max-width: 82px;
+}
+
+.content > p {
+
+    color: var(--clr-light-grey)
+} 
+
+.main-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--clr-dark-blue);
+    border-radius: 1.5rem;
+    max-width: var(--width-box);
+    padding: 1.5rem;
+    margin:1rem;
+}
+
+.secondary-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--clr-dark-blue);
+    border-radius: 1.5rem;
+    max-width: var(--width-box);
+    padding: 1.5rem;
+    margin:1rem;
+
+}
