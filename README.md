@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot of main screen](screenshot.jpg)
-![screenshot of secondary screen](screenshot_submitted.jpg)
+![screenshot of main screen](screenshot.JPG)
+![screenshot of secondary screen](screenshot_submitted.JPG)
 
 ### Links
 
