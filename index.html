@@ -9,13 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
 
   <!-- Rating state start-->
 <main>
-  <div class="main-container">
+  <div class="main-container" id="main">
     
     <div class="img-wrapper-main">
       <img alt="start icon" src="images/icon-star.svg">
@@ -28,23 +29,27 @@
       to help us improve our offering!</p>
     </section>
 
-    <section class="selection">
-      <button class="btn-choice" id="1">1</button>
-      <button class="btn-choice" id="2">2</button>
-      <button class="btn-choice" id="3">3</button>
-      <button class="btn-choice" id="4">4</button>
-      <button class="btn-choice" id="5">5</button>
-    </section>
-    <button class="btn-submit">Submit</button>
+    <form class="selection">
+      <input type="button" class="btn-choice" value="1" onclick="saveElement(1)"></button>
+      <input type="button" class="btn-choice" value="2" onclick="saveElement(2)"></button>
+      <input type="button" class="btn-choice" value="3" onclick="saveElement(3)"></button>
+      <input type="button" class="btn-choice" value="4" onclick="saveElement(4)"></button>
+      <input type="button" class="btn-choice" value="5" onclick="saveElement(5)"></button>
+    </form>
+    <button type="submit" class="btn-submit" onclick="ratingUpdate()">Submit</button>
   </div>
   <!-- Rating state end -->
-  <!-- Thank you state start -->
+  <!-- Thank you, state start -->
 
-  <div class="secondary-container">
+  <div class="secondary-container" id="secondary">
     <div class="img-wrapper-submit">
       <img atl="icon - thank you for submitting" src="images/illustration-thank-you.svg">
     </div>
-    <div>selected <span id="rating">#</span> out of 5</div>
+    <div class="rating-wrapper">
+      <p>
+        You selected <span id="rating">#</span> out of 5
+      </p>
+    </div>
 
     <h1>Thank you!</h1>
 

@@ -12,15 +12,12 @@
 
 *{
 
-    padding:0%;
-    margin:0%;
+    padding:0;
+    margin:0;
     box-sizing: border-box;
 }
 
 /* ------------------- HTML Elements ------------------- */
-
-
-
 
 body {
 
@@ -35,11 +32,6 @@ main {
     justify-content: center;
     align-items: center;
     height: 95vh;
-}
-
-p {
-
-    margin-top: 1rem;
 }
 
 footer {
@@ -70,16 +62,49 @@ footer p {
     color:var(--clr-light-grey);
 }
 
+.btn-choice:hover {
+
+    background-color: var(--clr-light-grey);
+    color: var(--clr-medium-grey);
+}
+
+.btn-submit {
+
+    font-family: "Overpass", serif;
+    height: 45px;
+    border-radius: 5rem;
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+
+.btn-submit:hover {
+
+    background-color: var(--clr-white);
+    color: var(--clr-orange);
+}
+
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+    gap:1.0rem;
+}
+
 .content > p {
 
     color: var(--clr-light-grey);
-    line-height: 1.25rem;
+    line-height: 1.25rem;    
 } 
 
 .img-wrapper-main {
 
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -98,18 +123,50 @@ footer p {
     margin:1rem;
 }
 
-.secondary-container {
+/* ------------------- Hidden Module ------------------- */
+
+.rating-wrapper {
 
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-medium-grey);
+    color: var(--clr-orange);
+    border-radius: 1.5rem;
+    height: 2.0rem ;
+    padding: 1rem;
+}
+
+.secondary-container {
+
+    display: none;
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0rem;
     background-color: var(--clr-dark-blue);
     border-radius: 1.5rem;
     max-width: var(--width-box);
     padding: 1.5rem;
     margin:1rem;
-
+    visibility: hidden;
 }
+
+.secondary-container > p {
+
+    color: var(--clr-light-grey);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.secondary-container > h1 {
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
 
 .selection {
 
