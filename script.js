@@ -15,16 +15,16 @@ function ratingUpdate() {
     if (ratingSelection <= 5 || ratingSelection >=1) {
 
         rating.innerText = ratingSelection;
+
+        // hide and view logic for multi-page HTML doc
+        secondContainer.style.visibility = "visible";
+        secondContainer.style.display = "flex";
+        mainContainer.style.visibility = "hidden";
+        mainContainer.style.display = "none";
     } else {
 
         alert("Error");
     };
-
-// hide and view logic for multi-page HTML doc
-    secondContainer.style.visibility = "visible";
-    secondContainer.style.display = "flex";
-    mainContainer.style.visibility = "hidden";
-    mainContainer.style.display = "none";
 };
 
 function saveElement(y) {
